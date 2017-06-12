@@ -12,7 +12,7 @@ npm install engined-amqp
 
 ## Usage
 
-You must start AMQP agent service in engined like that:
+You must start AMQP agent service in engined, see example below:
 
 ```javascript
 const { Manager } = require('engined');
@@ -33,20 +33,20 @@ const main = async () => {
 main();
 ```
 
-Now you can create AMQP agent to connect to server for your propose by using provided API: In own engined service, you can do this with `this.getContext()`.
+APIs for managing AMQP agent are registered after starting service. Now you can create AMQP agent to connect to server for your propose by using provided APIs.
 
 ```javascript
 
 // Create a new agent for AMQP
 let agent = this.getContext('AMQPAgent').createAgent('myAMQP');
 
-// Connect
+// Connect with AMQP URI
 let await agent.connect('amqp://localhost/myvhost');
 
 // Get channel for AMQP connection
 let channel = agent.getChannel();
 
-// Work with amqplib APIs ...
+// channel is provided by amqplib ...
 ```
 
 ## License
