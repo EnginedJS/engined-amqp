@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/cfsghost/engined-amqp#readme",
   "dependencies": {
-    "amqplib": "^0.5.1"
+    "amqplib": "^0.5.1",
+    "engined": "0.0.2"
   }
 }
