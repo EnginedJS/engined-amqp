@@ -2,6 +2,8 @@
 
 AMQP agent service for engined, which is based on `amqplib`.
 
+[![NPM](https://nodei.co/npm/engined-amqp.png)](https://nodei.co/npm/engined-amqp/)
+
 ## Installation
 
 Install via NPM:
